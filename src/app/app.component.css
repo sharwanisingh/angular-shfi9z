@@ -1,0 +1,21 @@
+.available {
+  background-color: green;
+  color: white;
+  padding: 10px;
+}
+
+.booked {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #ccc;
+  text-align: center;
+}

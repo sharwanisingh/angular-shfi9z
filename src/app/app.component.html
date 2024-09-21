@@ -1,0 +1,19 @@
+<div>
+  <h2>Seat Layout</h2>
+  <table>
+    <!-- Loop through each row of seats -->
+    <tr *ngFor="let row of seats">
+      <!-- Loop through each seat in the row -->
+      <td *ngFor="let seat of row" [ngClass]="seat.status">
+        {{ seat.row }}-{{ seat.seat }}
+        <!-- Show row and seat number -->
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <h3>Book Seats</h3>
+  <input type="number" [(ngModel)]="numSeats" placeholder="Enter number of seats" />
+  <button (click)="bookingMessage = bookSeats(numSeats)">Book</button>
+  <p>{{ bookingMessage }}</p>
+</div>
